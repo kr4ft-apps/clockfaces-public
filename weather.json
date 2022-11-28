@@ -1,0 +1,325 @@
+{
+    "url": "https://darksky.net/forecast/:lat,:long/ca12/en",
+    "indicators": {
+        "wind_value": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "wind"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "num"
+                }
+            ]
+        },
+        "wind_unit": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "wind"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "unit"
+                }
+            ]
+        },
+        "wind_direction": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "wind"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "direction"
+                }
+            ],
+            "attribute": "title"
+        },
+        "humidity_value": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "humidity"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "num"
+                }
+            ]
+        },
+        "humidity_unit": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "humidity"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "unit"
+                }
+            ]
+        },
+        "dew_value": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "dew_point"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "num"
+                }
+            ]
+        },
+        "dew_unit": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "dew_point"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "unit"
+                }
+            ]
+        },
+        "uv_index_value": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "uv_index"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "num"
+                }
+            ]
+        },
+        "visibility_value": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "visibility"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "num"
+                }
+            ]
+        },
+        "visibility_unit": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "visibility"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "unit"
+                }
+            ]
+        },
+        "pressure_value": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "pressure"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "num"
+                }
+            ]
+        },
+        "pressure_unit": {
+            "selectors": [
+                {
+                    "type": "id",
+                    "value": "currentDetails"
+                },
+                {
+                    "type": "class",
+                    "value": "pressure"
+                },
+                {
+                    "type": "class",
+                    "value": "val"
+                },
+                {
+                    "type": "class",
+                    "value": "unit"
+                }
+            ]
+        },
+        "feels_like_value": {
+            "selectors": [
+                {
+                    "type": "class",
+                    "value": "feels-like-text"
+                }
+            ],
+            "transform": "return input.replace('&nbsp;', '').replace(/[a-zA-Z\\.\\:\\s+\\˚]/g, '')"
+        },
+        "low_value": {
+            "selectors": [
+                {
+                    "type": "class",
+                    "value": "low-temp-text"
+                }
+            ],
+            "transform": "return input.replace('&nbsp;', '').replace(/[a-zA-Z\\.\\:\\s+\\˚]/g, '')"
+        },
+        "high_value": {
+            "selectors": [
+                {
+                    "type": "class",
+                    "value": "high-temp-text"
+                }
+            ],
+            "transform": "return input.replace('&nbsp;', '').replace(/[a-zA-Z\\.\\:\\s+\\˚]/g, '')"
+        },
+        "temperature_value": {
+            "selectors": [
+                {
+                    "type": "class",
+                    "value": "currently"
+                },
+                {
+                    "type": "class",
+                    "value": "desc"
+                },
+                {
+                    "type": "class",
+                    "value": "summary"
+                }
+            ],
+            "transform": "return input.replace('&nbsp;', '').replace(/[a-zA-Z\\.\\:\\s+\\˚]/g, '')"
+        },
+        "temperature_description": {
+            "selectors": [
+                {
+                    "type": "class",
+                    "value": "currently"
+                },
+                {
+                    "type": "class",
+                    "value": "desc"
+                },
+                {
+                    "type": "class",
+                    "value": "summary"
+                }
+            ],
+            "transform": "return input.replace('&nbsp;', '').replace(/[^a-zA-Z ]/g, '')"
+        },
+        "temperature_condition": {
+            "selectors": [
+                {
+                    "type": "class",
+                    "value": "currently"
+                },
+                {
+                    "type": "class",
+                    "value": "currently-icon"
+                },
+                {
+                    "type": "tag",
+                    "value": "img"
+                }
+            ],
+            "attribute": "src",
+            "transform": "return input.substring(input.lastIndexOf('/') + 1, input.lastIndexOf('.'))"
+        }
+    }
+}
