@@ -1,5 +1,6 @@
 {
     "url": "https://darksky.net/forecast/:lat,:long/ca12/en",
+    "fallback_url": "https://darksky.net/forecast/:lat,:long/ca12/en",
     "indicators": {
         "wind_value": {
             "selectors": [
